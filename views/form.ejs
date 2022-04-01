@@ -11,20 +11,23 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/css/index.css">
   </head>
 
   <body>
     <main>
+
       <h1>Ingrese Producto</h1>
-      <form action="/api/productos" method="post">
+      <form onsubmit="addProducts(this)" id="products">
         <label for="title">Nombre</label>
         <input type="text" name="title" id="title" /><br />
         <label for="price">Precio</label>
         <input type="number" name="price" id="price" /><br />
         <label for="thumbnail">Foto URL</label>
         <input type="text" name="thumbnail" id="thumbnail" /><br />
-        <input id="button" type="submit" value="Enviar" />
+        <input id="submit" type="submit" value="Enviar" />
       </form>
+
       <table class="table">
         <thead>
           <tr>
@@ -36,6 +39,15 @@
           </tbody>
         </thead>
       </table>
+      <h2>Centro de Mensajes</h2>
+    <div id="messages"></div>
+
+    <form onsubmit="addMessage(this)" id="chat">
+        <input type="email" id="email" placeholder="Tu Email" >
+        <input type="text" id="text" placeholder="Cuéntanos algo...">
+        <input type="submit" value="Enviar">
+    </form>
+
     </main>
   </body>
   <script

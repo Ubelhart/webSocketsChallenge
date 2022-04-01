@@ -1,0 +1,1 @@
+[{"email":"juan@gmail.com","text":"¡Hola! ¿Que tal?"},{"email":"pedro@outlook.com","text":"¡Muy bien! ¿Y vos?"},{"email":"Ana@hotmail.com","text":"¡Genial!"},{"email":"juanpa@hotmail.com","text":"Me canse"}]
